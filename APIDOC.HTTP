@@ -1,0 +1,38 @@
+#Api call for listing all books
+###
+GET  http://127.0.0.1:8000/book/
+Accept: application/json
+
+#api call for adding 
+###
+post http://127.0.0.1:8000/book/
+Content-Type: application/json
+
+{
+    "title":"godfather",
+    "author":"allen",
+    "price":50,
+    
+}
+
+#api call for retrive 
+###
+GET  http://127.0.0.1:8000/book/2/
+Accept: application/json
+
+#api call for update 
+###
+GET  http://127.0.0.1:8000/book/2/
+Content-Type: application/json
+
+{
+    "title":"godfather",
+    "author":"alen",
+    "price":100,
+    
+}
+
+#api call for deleting player
+###
+DELETE  http://127.0.0.1:8000/book/2/ 
+
